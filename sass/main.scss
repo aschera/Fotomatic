@@ -8,6 +8,8 @@
 @import "base/utilities";
 
 @import "components/filters";
+@import "components/quotes";
+@import "components/feature";
 
 @import "layout/footer";
 @import "layout/grid";
@@ -40,8 +42,6 @@
   
   .image-container img {
     display: block;
-    height: 65%;
-    width: 90%;
   }
   
   @media only screen and (max-width: 760px) {
@@ -55,6 +55,8 @@
   
   #sign-up-section {
     background-image: url(../images/banner-landingpage.jpg);
+    background-position: top right;
+    background-size: cover;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -152,113 +154,6 @@
     }
   }
   
-  /* Features Section */
-  
-  #features-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem 5%;
-    background-color: #f3f3f3;
-  }
-
-  #features-section .content{
-    height: 187px;
-  }
-  
-  .feature {
-    flex: 1;
-    padding: 2rem;
-    margin: 0px 1.25rem;
-    background-color: white;
-  }
-  
-  .feature .image-container {
-    width: 90%;
-    height: 65%;
-    margin: 0 auto;
-  }
-
- 
 
   
-  .feature h2 {
-    padding-bottom: .5rem;
-    padding-top: 40px;
-    font-size: 2.25rem;
-    font-weight: bold;
-    color: #4a4a4a;
-  }
   
-  .feature h3 {
-    font-size: 1rem;
-    line-height: 1.2;
-    font-weight: 300;
-    color: #4a4a4a;
-  }
-  
-  @media only screen and (max-width: 890px) {
-    .feature h2 {
-      font-size: 1.125rem;
-      line-height: 1.3;
-      font-weight: normal;
-    }
-  
-    .feature h3 {
-      font-size: .875rem;
-      line-height: 1.4;
-    }
-  }
-  
-  @media only screen and (max-width: 760px) {
-    #features-section {
-      flex-flow: column;
-      padding: 0;
-    }
-  
-    .feature {
-      margin: 0;
-      padding: 1.25rem 1rem 0 1rem;
-    }
-  }
-  
-  
-  
-  /* Quotes Section */
-  
-  #quotes-section {
-    background-color: #f3f3f3;
-  }
-  
-  #quotes-section content {
-    padding: 5rem 0;
-  }
-  
-  #quotes-section quote {
-    padding-right: 1.875rem;
-    font-family: "Palatino", serif;
-    font-size: 1.875rem;
-    line-height: 1.1;
-    font-style: italic;
-    color: #4a4a4a;
-  }
-  
-  #quotes-section quote-citation {
-    height: 1.875rem;
-  }
-  
-  @media only screen and (max-width: 760px) {
-    #quotes-section content {
-      padding: 1.875rem .625rem;
-    }
-  
-    #quotes-section quote {
-      font-size: 1.5rem;
-      line-height: 1.4;
-    }
-  
-    #quotes-section quote-citation {
-      display: block;
-      padding-top: 1rem;
-      margin: auto;
-    }
-  }
